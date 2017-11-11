@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SQLiteEjemplo.EditCiclo"
+             Title="Editar Ciclo">
+    <ContentPage.Content>
+        <TableView Intent="Settings" BackgroundColor="White">
+            <TableRoot>
+                <TableSection Title="Editar Ciclo">
+                    <EntryCell x:Name="txtNombre" Label="Nombre" Text ="{Binding Nombre}" Keyboard="Text" />
+                    <EntryCell x:Name="txtAbreviatura" Label="Abreviatura" Text ="{Binding Abreviatura}" Keyboard="Text" />
+                    <ViewCell>
+                        <ContentView Padding="0,0">
+                            <ContentView.Content>
+                                <Button BackgroundColor="#fd6d6d" Text="Guardar" TextColor="White" Clicked="OnSaveClicked" />
+                            </ContentView.Content>
+                        </ContentView>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
